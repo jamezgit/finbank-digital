@@ -1,0 +1,382 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Length 9675 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? TÓPICO 2: MODELAGEM DA SOLUÇÃO) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 364.28 818.89 Tm (SOFTWARE EM PYTHON & INFRAESTRUTURA DE REDE) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Documentação Técnica de Engenharia: Fluxogramas, Pseudocódigo e Integração ICMP | FinBank Digital) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 1 de 4) Tj ET
+0.750 0.820 0.950 RG 1.00 w 0.950 0.970 1.000 rg 36.00 733.89 523.28 56.00 re B
+BT /F2 13 Tf 0.040 0.150 0.280 rg 1 0 0 1 48.00 771.89 Tm (PROJETO 02 ? FINBANK DIGITAL: MODELAGEM DA SOLUÇÃO) Tj ET
+BT /F1 9.5 Tf 0.250 0.350 0.500 rg 1 0 0 1 48.00 756.89 Tm (Tópico 2: Representação Técnica, Fluxogramas, Pseudocódigo e Integração de Rede) Tj ET
+BT /F2 8 Tf 0.050 0.550 0.350 rg 1 0 0 1 48.00 742.89 Tm (ALGORITMO DE MONITORAMENTO EM PYTHON 3 & ENLACES ROUTER-ON-A-STICK \(802.1Q\)) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 721.89 Tm (2.1 VISÃO GERAL DA MODELAGEM TÉCNICA) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 718.89 m 559.28 718.89 l S
+BT /F1 7.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 707.89 Tm (A modelagem técnica do sistema compreende a articulação entre o software de monitoramento autônomo \(desenvolvido em) Tj ET
+BT /F1 7.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 696.89 Tm (Python 3\) e a infraestrutura física/lógica segmentada \(simulada no Cisco Packet Tracer\). O algoritmo atua como uma sonda de) Tj ET
+BT /F1 7.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 685.89 Tm (rede periódica que analisa a transitabilidade de pacotes ICMP através das VLANs, gerenciando estados operacionais e calculando SLAs.) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 666.89 Tm (2.2 FLUXOGRAMA DO ALGORITMO DE MONITORAMENTO) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 663.89 m 559.28 663.89 l S
+BT /F1 7.6 Tf 0.250 0.250 0.250 rg 1 0 0 1 36.00 653.89 Tm (O fluxo operacional a seguir descreve a lógica de decisão, desde o disparo do teste até o escalonamento de alarmes:) Tj ET
+0.750 0.800 0.900 RG 0.80 w 0.980 0.980 0.990 rg 36.00 328.89 523.28 315.00 re B
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 634.89 Tm (                                   [ INÍCIO DO CICLO DE VERIFICAÇÃO ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 628.39 Tm (                                                    |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 621.89 Tm (                                   [ Carregar Ativos Cadastrados \(RF01\) ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 615.39 Tm (                                                    |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 608.89 Tm (                      +-----------------------------v-----------------------------+) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 602.39 Tm (                      | Para CADA dispositivo cadastrado na agência:              |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 595.89 Tm (                      +-----------------------------+-----------------------------+) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 589.39 Tm (                                                    |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 582.89 Tm (                                       [ Modo de Execução? ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 576.39 Tm (                                        /                 \\) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 569.89 Tm (                          \(Modo Real\)  /                   \\  \(Modo Simulado\)) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 563.39 Tm (                                      v                     v) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 556.89 Tm (                     [ Disparar ICMP Ping \(800ms\) ]   [ Forçar Status Simulado ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 550.39 Tm (                                      \\                     /) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 543.89 Tm (                                       \\                   /) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 537.39 Tm (                                        v                 v) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 530.89 Tm (                                     [ Resposta Obtida com Sucesso? ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 524.39 Tm (                                        /                        \\) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 517.89 Tm (                           \(SIM\)       /                          \\       \(NÃO\)) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 511.39 Tm (                                      v                            v) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 504.89 Tm (                         +-------------------------+  +-----------------------------------+) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 498.39 Tm (                         | Status: 'SUCESSO' [OK]  |  | Status: 'FALHA' [OFFLINE]         |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 491.89 Tm (                         | falhas_consecutivas = 0 |  | falhas_consecutivas += 1 \(RF04\)   |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 485.39 Tm (                         +------------+------------+  +-----------------+-----------------+) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 478.89 Tm (                                      |                                 |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 472.39 Tm (                                      |                    [ Ativo CRÍTICO ou ALTA? \(RN01\) ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 465.89 Tm (                                      |                     /                           \\) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 459.39 Tm (                                      |             \(SIM\)  /                             \\  \(NÃO\)) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 452.89 Tm (                                      |                   v                               v) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 446.39 Tm (                                      |     [ Emite ALERTA PRIORITÁRIO ]                  |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 439.89 Tm (                                      |                   |                               |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 433.39 Tm (                                      |                   +--------------+----------------+) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 426.89 Tm (                                      |                                  |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 420.39 Tm (                                      |                    [ falhas_consecutivas >= 3? \(RN02\) ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 413.89 Tm (                                      |                     /                           \\) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 407.39 Tm (                                      |             \(SIM\)  /                             \\  \(NÃO\)) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 400.89 Tm (                                      |                   v                               v) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 394.39 Tm (                                      |     [ Emite ALERTA DE INDISPONIBILIDADE ]         |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 387.89 Tm (                                      |                   |                               |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 381.39 Tm (                                      +-------------------+---------------+---------------+) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 374.89 Tm (                                                                          |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 368.39 Tm (                                      [ Gravar no Histórico: Data/Hora, ID, Status \(RF02\) ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 361.89 Tm (                                                                          |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 355.39 Tm (                                 [ Restam dispositivos no ciclo? ] -------+ \(SIM\)) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 348.89 Tm (                                                 | \(NÃO\)) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 342.39 Tm (                                                 v) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 335.89 Tm (                         [ Calcular Disponibilidade Uptime % = \(Sucessos / Total\) * 100 ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 329.39 Tm (                                                 |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 322.89 Tm (                              [ Gerar Relatório Consolidado de Painel \(RF06\) ]) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 316.39 Tm (                                                 |) Tj ET
+BT /F3 5.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 309.89 Tm (                                        [ FIM DO CICLO ]) Tj ET
+endstream
+endobj
+2 0 obj
+<< /Length 7823 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? TÓPICO 2: MODELAGEM DA SOLUÇÃO) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 364.28 818.89 Tm (SOFTWARE EM PYTHON & INFRAESTRUTURA DE REDE) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Documentação Técnica de Engenharia: Fluxogramas, Pseudocódigo e Integração ICMP | FinBank Digital) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 2 de 4) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 789.89 Tm (2.3 PSEUDOCÓDIGO DAS PRINCIPAIS FUNCIONALIDADES \(PARTE 1\)) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 786.89 m 559.28 786.89 l S
+BT /F2 8.5 Tf 0.100 0.250 0.550 rg 1 0 0 1 36.00 776.89 Tm (2.3.1 MÓDULO 1: ESTRUTURAS DE DADOS E CADASTRO DE ATIVOS \(RF01\)) Tj ET
+0.800 0.850 0.900 RG 0.80 w 0.970 0.980 0.990 rg 36.00 671.89 523.28 96.00 re B
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 758.89 Tm (ESTRUTURA RegistroVerificacao:) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 752.29 Tm (    data_hora : TEXTO                   // Data e hora do teste no formato AAAA-MM-DD HH:MM:SS) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 745.69 Tm (    resultado : TEXTO                   // Armazena 'SUCESSO' ou 'FALHA') Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 739.09 Tm (FIM_ESTRUTURA) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 732.49 Tm () Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 725.89 Tm (CLASSE Dispositivo:) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 719.29 Tm (    ATRIBUTOS: id, nome, ip, setor, servico, criticidade, historico, falhas_consecutivas) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 712.69 Tm (    MÉTODO Inicializar\(id_d, nome_d, ip_d, setor_d, servico_d, criticidade_d\):) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 706.09 Tm (        id <- id_d; nome <- nome_d; ip <- ip_d; setor <- setor_d; servico <- servico_d) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 699.49 Tm (        criticidade <- ConverterParaMaiusculo\(criticidade_d\) // 'CRITICO', 'ALTA', 'NORMAL') Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 692.89 Tm (        historico <- LISTA_VAZIA\(\)) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 686.29 Tm (        falhas_consecutivas <- 0) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 679.69 Tm (    FIM_MÉTODO) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 673.09 Tm (FIM_CLASSE) Tj ET
+BT /F2 8.5 Tf 0.100 0.250 0.550 rg 1 0 0 1 36.00 657.89 Tm (2.3.2 MÓDULO 2: DRIVER DE VERIFICAÇÃO ICMP DE BAIXO NÍVEL \(RNF01 / RNF02\)) Tj ET
+0.800 0.850 0.900 RG 0.80 w 0.970 0.980 0.990 rg 36.00 546.89 523.28 102.00 re B
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 639.89 Tm (FUNÇÃO ExecutarPingICMP\(endereco_ip : TEXTO\) RETORNA BOOLEANO:) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 633.29 Tm (    // RNF01: Limite máximo de espera configurado em 800ms por host) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 626.69 Tm (    // RNF02: Detecção automática da plataforma para compatibilidade Windows e Linux) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 620.09 Tm (    SE SistemaOperacional\(\) = 'WINDOWS' ENTÃO) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 613.49 Tm (        comando <- ['ping', '-n', '1', '-w', '800', endereco_ip]) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 606.89 Tm (    SENÃO) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 600.29 Tm (        comando <- ['ping', '-c', '1', '-W', '1', endereco_ip]) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 593.69 Tm (    FIM_SE) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 587.09 Tm (    TENTE) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 580.49 Tm (        retorno <- ExecutarProcessoOculto\(comando\)) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 573.89 Tm (        RETORNE \(retorno.codigo_saida == 0\) // Código 0 indica recebimento de Echo Reply) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 567.29 Tm (    EXCEÇÃO) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 560.69 Tm (        RETORNE FALSO) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 554.09 Tm (    FIM_TENTE) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 547.49 Tm (FIM_FUNÇÃO) Tj ET
+BT /F2 8.5 Tf 0.100 0.250 0.550 rg 1 0 0 1 36.00 532.89 Tm (2.3.3 MÓDULO 3: CICLO DE MONITORAMENTO E REGRAS DE NEGÓCIO \(RF02/RF04/RN01/RN02\)) Tj ET
+0.800 0.850 0.900 RG 0.80 w 0.970 0.980 0.990 rg 36.00 343.89 523.28 180.00 re B
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 514.89 Tm (PROCEDIMENTO ExecutarCicloDeMonitoramento\(simular : BOOLEANO, id_falha : TEXTO\):) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 508.29 Tm (    PARA CADA disp EM lista_dispositivos FAÇA:) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 501.69 Tm (        // 1. Determinação de conectividade \(Real vs. Simulado\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 495.09 Tm (        SE simular = VERDADEIRO ENTÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 488.49 Tm (            status <- \(disp.id != id_falha\) // Injeção de pane forçada) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 481.89 Tm (        SENÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 475.29 Tm (            status <- ExecutarPingICMP\(disp.ip\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 468.69 Tm (        FIM_SE) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 462.09 Tm (        // 2. Registro no histórico cronológico e tratamento de falhas \(RF02, RN03, RN04\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 455.49 Tm (        data_atual <- ObterTimestampAtual\(\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 448.89 Tm (        SE status = VERDADEIRO ENTÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 442.29 Tm (            AdicionarHistorico\(disp, { data: data_atual, status: 'SUCESSO' }\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 435.69 Tm (            disp.falhas_consecutivas <- 0 // Reset imediato no primeiro sucesso \(RN03\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 429.09 Tm (        SENÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 422.49 Tm (            AdicionarHistorico\(disp, { data: data_atual, status: 'FALHA' }\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 415.89 Tm (            disp.falhas_consecutivas <- disp.falhas_consecutivas + 1 // Acumulador \(RF04\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 409.29 Tm (            // 3. Aplicação de Regras de Alerta) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 402.69 Tm (            SE disp.criticidade EM ['CRITICO', 'ALTA'] ENTÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 396.09 Tm (                DispararAlerta\('[PRIORIDADE MÁXIMA] Ativo CRÍTICO sem resposta: ' + disp.nome\) // RN01) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 389.49 Tm (            FIM_SE) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 382.89 Tm (            SE disp.falhas_consecutivas >= 3 ENTÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 376.29 Tm (                DispararAlerta\('[INDISPONIBILIDADE PERSISTENTE] 3 falhas consecutivas em ' + disp.nome\) // RN02) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 369.69 Tm (            FIM_SE) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 363.09 Tm (        FIM_SE) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 356.49 Tm (    FIM_PARA) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 349.89 Tm (FIM_PROCEDIMENTO) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Length 9559 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? TÓPICO 2: MODELAGEM DA SOLUÇÃO) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 364.28 818.89 Tm (SOFTWARE EM PYTHON & INFRAESTRUTURA DE REDE) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Documentação Técnica de Engenharia: Fluxogramas, Pseudocódigo e Integração ICMP | FinBank Digital) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 3 de 4) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 789.89 Tm (2.3 PSEUDOCÓDIGO DAS PRINCIPAIS FUNCIONALIDADES \(PARTE 2\)) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 786.89 m 559.28 786.89 l S
+BT /F2 8.5 Tf 0.100 0.250 0.550 rg 1 0 0 1 36.00 776.89 Tm (2.3.4 MÓDULO 4: CÁLCULO DE DISPONIBILIDADE PERCENTUAL - UPTIME \(RF05\)) Tj ET
+0.800 0.850 0.900 RG 0.80 w 0.970 0.980 0.990 rg 36.00 699.89 523.28 68.00 re B
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 758.89 Tm (FUNÇÃO CalcularDisponibilidadeUptime\(disp : Dispositivo\) RETORNA REAL:) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 752.29 Tm (    total_testes <- TamanhoLista\(disp.historico\)) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 745.69 Tm (    SE total_testes = 0 ENTÃO) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 739.09 Tm (        RETORNE 100.0 // Ativo recém cadastrado inicia com 100% de disponibilidade nominal) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 732.49 Tm (    FIM_SE) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 725.89 Tm (    total_sucessos <- ContarOcorrencias\(disp.historico, 'SUCESSO'\)) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 719.29 Tm (    uptime_pct <- \(total_sucessos / total_testes\) * 100.0) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 712.69 Tm (    RETORNE ArredondarCasasDecimais\(uptime_pct, 2\)) Tj ET
+BT /F3 6.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 706.09 Tm (FIM_FUNÇÃO) Tj ET
+BT /F2 8.5 Tf 0.100 0.250 0.550 rg 1 0 0 1 36.00 687.89 Tm (2.3.5 MÓDULO 5: EMISSÃO DE RELATÓRIO CONSOLIDADO E AUDITORIA \(RF03 / RF06\)) Tj ET
+0.800 0.850 0.900 RG 0.80 w 0.970 0.980 0.990 rg 36.00 580.89 523.28 98.00 re B
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 669.89 Tm (PROCEDIMENTO GerarRelatorioConsolidado\(\):) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 663.29 Tm (    ExibirCabecalhoRelatorio\('RELATÓRIO CONSOLIDADO DE DISPONIBILIDADE - FINBANK DIGITAL'\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 656.69 Tm (    PARA CADA disp EM lista_dispositivos FAÇA:) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 650.09 Tm (        pct <- CalcularDisponibilidadeUptime\(disp\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 643.49 Tm (        SE disp.falhas_consecutivas >= 3 ENTÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 636.89 Tm (            estado <- 'PERSISTENTE \(' + ConverterTexto\(disp.falhas_consecutivas\) + ' falhas\)') Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 630.29 Tm (        SENÃO SE disp.falhas_consecutivas > 0 ENTÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 623.69 Tm (            estado <- 'Intermitente \(' + ConverterTexto\(disp.falhas_consecutivas\) + ' falha\)') Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 617.09 Tm (        SENÃO) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 610.49 Tm (            estado <- 'Estável \(0 falhas\)') Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 603.89 Tm (        FIM_SE) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 597.29 Tm (        ExibirLinhaFormatada\(disp.id, disp.nome, disp.setor, disp.criticidade, pct, estado\)) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 590.69 Tm (    FIM_PARA) Tj ET
+BT /F3 6.4 Tf 0.100 0.150 0.250 rg 1 0 0 1 44.00 584.09 Tm (FIM_PROCEDIMENTO) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 566.89 Tm (2.4 DIAGRAMA SIMPLIFICADO DA ARQUITETURA DA SOLUÇÃO) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 563.89 m 559.28 563.89 l S
+0.800 0.850 0.900 RG 0.80 w 0.980 0.980 0.990 rg 36.00 391.89 523.28 162.00 re B
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 544.89 Tm (  +---------------------------------------------------------------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 538.59 Tm (  |                                   CAMADA DE APLICAÇÃO: PYTHON MONITOR \(CLI\)                                   |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 532.29 Tm (  |       ? Classes: MonitorFinBank & Dispositivo      ? Injeção de Ping ICMP \(800ms\)      ? Relatórios Uptime %  |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 525.99 Tm (  +-------------------------------------------------------+-------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 519.69 Tm (                                                          | Chamadas nativas de sistema \(subprocess\)) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 513.39 Tm (                                                          v) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 507.09 Tm (  +---------------------------------------------------------------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 500.79 Tm (  |                                   CAMADA DE TRANSPORTE & ENLACE: PILHA TCP/IP                                 |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 494.49 Tm (  |       ? Gerador de Quadros ICMP Echo Request \(Tipo 8\)       ? Captura de Resposta Echo Reply \(Tipo 0\)         |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 488.19 Tm (  +-------------------------------------------------------+-------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 481.89 Tm (                                                          | Injeção através da Placa de Rede / Interface Virtual) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 475.59 Tm (                                                          v) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 469.29 Tm (  +-------------------------------------------------------+-------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 462.99 Tm (  |                                   R-FINBANK \(Roteador Cisco 1941\)                                             |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 456.69 Tm (  |       ? Subinterface Gig0/0.10: 192.168.10.1 \(VLAN 10\)      ? Pools DHCP de Atendimento e Operações           |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 450.39 Tm (  |       ? Subinterface Gig0/0.20: 192.168.20.1 \(VLAN 20\)      ? Roteamento Router-on-a-Stick dot1Q              |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 444.09 Tm (  |       ? Subinterface Gig0/0.30: 192.168.30.1 \(VLAN 30\)      ? Gateway Central da Agência                      |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 437.79 Tm (  +-------------------------------------------------------+-------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 431.49 Tm (                                                          | Enlace Tronco IEEE 802.1Q \(Gig0/0 a Gig0/1\)) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 425.19 Tm (  +-------------------------------------------------------+-------------------------------------------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 418.89 Tm (  |                                  SW-FINBANK \(Switch Catalyst 2960-24TT\)                                       |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 412.59 Tm (  +-----------------------+-------------------------------+-------------------------------+-----------------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 406.29 Tm (                          | Portas Fa0/1 e Fa0/2          | Portas Fa0/6 e Fa0/7          | Portas Fa0/11 e Fa0/12) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 399.99 Tm (                          v                               v                               v) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 393.69 Tm (  +-------------------------------+       +---------------+---------------+       +---------------+---------------+) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 387.39 Tm (  |       SETOR ATENDIMENTO       |       |       OPERAÇÕES & ADMIN       |       |     SERVIDORES DATA CENTER    |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 381.09 Tm (  |           \(VLAN 10\)           |       |           \(VLAN 20\)           |       |           \(VLAN 30\)           |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 374.79 Tm (  | [PC-ATEND-01] 192.168.10.11   |       | [PC-OPER-01]  192.168.20.11   |       | [SRV-WEB-BANCO] 192.168.30.10 |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 368.49 Tm (  | [PC-ATEND-02] 192.168.10.12   |       | [PC-ADMIN-01] 192.168.20.12   |       | [SRV-MONITOR]   192.168.30.20 |) Tj ET
+BT /F3 5.5 Tf 0.100 0.150 0.250 rg 1 0 0 1 42.00 362.19 Tm (  +-------------------------------+       +-------------------------------+       +-------------------------------+) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Length 5638 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? TÓPICO 2: MODELAGEM DA SOLUÇÃO) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 364.28 818.89 Tm (SOFTWARE EM PYTHON & INFRAESTRUTURA DE REDE) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Documentação Técnica de Engenharia: Fluxogramas, Pseudocódigo e Integração ICMP | FinBank Digital) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 4 de 4) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 789.89 Tm (2.5 DESCRIÇÃO DA INTEGRAÇÃO ENTRE O ALGORITMO E A INFRAESTRUTURA DE REDE) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 786.89 m 559.28 786.89 l S
+0.200 0.400 0.700 RG 0.80 w 0.960 0.980 1.000 rg 36.00 709.89 523.28 66.00 re B
+BT /F2 7.8 Tf 0.200 0.400 0.700 rg 1 0 0 1 44.00 763.89 Tm (1. INJEÇÃO E DESPACHO DE PACOTES ICMP PELO ALGORITMO) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 752.89 Tm (? A integração direta ocorre através do método ping_host\(ip\), que invoca o executável ping nativo do sistema operacional.) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 742.39 Tm (? Utiliza a biblioteca subprocess.run\(\) com redirecionamento de streams \(stdout/stderr = DEVNULL\) para manter a console limpa.) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 731.89 Tm (? Parâmetros de tempo limite rígidos: -w 800 \(Windows\) e -W 1 \(Linux\). Isso assegura que se um dispositivo estiver desligado) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 721.39 Tm (  ou com cabo rompido, o software aguarda no máximo 800 milissegundos, impedindo o congelamento da aplicação.) Tj ET
+0.100 0.500 0.300 RG 0.80 w 0.970 0.990 0.970 rg 36.00 613.89 523.28 88.00 re B
+BT /F2 7.8 Tf 0.100 0.500 0.300 rg 1 0 0 1 44.00 689.89 Tm (2. ROTEAMENTO E TRÂNSITO INTER-VLAN \(ROUTER-ON-A-STICK 802.1Q\)) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 678.89 Tm (? Quando o monitor testa um ativo fora da sua rede local \(ex: testar PC-OPER-01 em 192.168.20.11 a partir da VLAN 30\):) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 668.39 Tm (  1. O pacote Echo Request sai pela interface e é encaminhado ao Gateway Padrão 192.168.30.1.) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 657.89 Tm (  2. O Switch Catalyst 2960 tagueia o quadro com a VLAN 30 e o envia pela porta Gig0/1 \(Tronco dot1Q\).) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 647.39 Tm (  3. O Roteador Cisco 1941 recebe na Gig0/0.30, consulta a tabela de roteamento interna e o comuta para a Gig0/0.20.) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 636.89 Tm (  4. O Roteador retagueia o pacote como VLAN 20 e o envia de volta ao switch, que entrega na porta de acesso do PC.) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 626.39 Tm (  5. O caminho inverso é percorrido pelo Echo Reply. Se o ciclo completar, o returncode é 0 \(ONLINE [OK]\).) Tj ET
+0.700 0.400 0.100 RG 0.80 w 1.000 0.980 0.940 rg 36.00 517.89 523.28 88.00 re B
+BT /F2 7.8 Tf 0.700 0.400 0.100 rg 1 0 0 1 44.00 593.89 Tm (3. TRATAMENTO DE ESTADOS EM TEMPO REAL E MITIGAÇÃO DE FALSOS POSITIVOS) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 582.89 Tm (? Falsos Positivos Mitigados: Perdas transitórias de 1 único pacote ICMP não geram pânico na equipe técnica. Apenas se) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 572.39 Tm (  a pane persistir por 3 ciclos consecutivos de varredura, o sistema emite o alarme [INDISPONIBILIDADE PERSISTENTE] \(RN02\).) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 561.89 Tm (? Alarme Imediato para Ativos Vitais: Dispositivos cadastrados como CRÍTICO \(Gateway R-FINBANK e Servidor Web\) disparam) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 551.39 Tm (  imediatamente o alerta [PRIORIDADE MÁXIMA] no primeiro fracasso de comunicação, acelerando a resposta da TI \(RN01\).) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 540.89 Tm (? Auto-recuperação Dinâmica: Assim que a porta do switch for reativada ou o cabo for reconectado no Packet Tracer, o teste) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 530.39 Tm (  subsequente detecta sucesso e reseta instantaneamente o acumulador de falhas seguidas para 0 \(RN03\).) Tj ET
+0.300 0.300 0.300 RG 0.80 w 0.980 0.980 0.980 rg 36.00 454.89 523.28 55.00 re B
+BT /F2 7.8 Tf 0.300 0.300 0.300 rg 1 0 0 1 44.00 497.89 Tm (4. MODO DE SIMULAÇÃO CONTROLADA PARA DEMONSTRAÇÕES E HOMOLOGAÇÃO) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 486.89 Tm (? O software possui o recurso simular=True com injeção de ID alvo \(ex: id_falha='SRV01'\).) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 476.39 Tm (? Esse mecanismo permite simular com exatidão matemática o comportamento de rompimento de cabo e queda de serviços) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 465.89 Tm (  em apresentações acadêmicas ou testes isolados, validando o cálculo de Uptime % sem necessidade de desligar ativos reais.) Tj ET
+0.250 0.450 0.800 RG 1.00 w 0.950 0.980 1.000 rg 36.00 412.89 523.28 32.00 re B
+BT /F2 7.8 Tf 0.100 0.250 0.550 rg 1 0 0 1 44.00 434.89 Tm (CONCLUSÃO DA MODELAGEM TÉCNICA:) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 425.89 Tm (A modelagem atende 100% aos requisitos de software e infraestrutura, garantindo integração contínua entre a camada lógica) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 416.89 Tm (em Python 3 e os segmentos de rede do FinBank Digital simulados no Cisco Packet Tracer.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+9 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 1 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+10 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 2 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+11 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 3 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+12 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+13 0 obj
+<<
+  /Type /Pages
+  /Kids [9 0 R 10 0 R 11 0 R 12 0 R]
+  /Count 4
+>>
+endobj
+14 0 obj
+<<
+  /Type /Catalog
+  /Pages 13 0 R
+>>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000009742 00000 n 
+0000017617 00000 n 
+0000027228 00000 n 
+0000032918 00000 n 
+0000032988 00000 n 
+0000033063 00000 n 
+0000033131 00000 n 
+0000033204 00000 n 
+0000033410 00000 n 
+0000033617 00000 n 
+0000033824 00000 n 
+0000034031 00000 n 
+0000034116 00000 n 
+trailer
+<<
+  /Size 15
+  /Root 14 0 R
+>>
+startxref
+34171
+%%EOF

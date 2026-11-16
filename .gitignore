@@ -1,0 +1,22 @@
+# Python cache e compilação
+__pycache__/
+*.py[cod]
+*$py.class
+*.pyc
+
+# Logs e arquivos temporários
+*.log
+test_pdf.py
+
+# Ambientes virtuais
+env/
+venv/
+.venv/
+
+# IDEs e Editores
+.vscode/
+.idea/
+
+# Sistema operacional
+Thumbs.db
+.DS_Store

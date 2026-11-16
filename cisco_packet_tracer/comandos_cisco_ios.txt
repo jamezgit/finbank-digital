@@ -1,0 +1,153 @@
+================================================================================
+FINBANK DIGITAL — SCRIPTS DE CONFIGURAÇÃO CISCO IOS
+Equipamentos: Switch Catalyst 2960-24TT e Roteador Cisco 1941
+Topologia: Router-on-a-Stick com Enlace Tronco IEEE 802.1Q
+================================================================================
+
+--------------------------------------------------------------------------------
+1. CONFIGURAÇÃO DO SWITCH CATALYST 2960-24TT (SW-FINBANK)
+--------------------------------------------------------------------------------
+Acesse a aba CLI do Switch e execute os seguintes comandos:
+
+enable
+configure terminal
+hostname SW-FINBANK
+
+! 1. Criação das VLANs Setoriais
+vlan 10
+ name ATENDIMENTO
+exit
+
+vlan 20
+ name OPERACOES_ADMIN
+exit
+
+vlan 30
+ name SERVIDORES
+exit
+
+! 2. Portas de Acesso da VLAN 10 (Setor de Atendimento - Fa0/1 a Fa0/5)
+interface range fastEthernet 0/1 - 5
+ switchport mode access
+ switchport access vlan 10
+ spanning-tree portfast
+ description PORTAS_ACESSO_VLAN10_ATENDIMENTO
+exit
+
+! 3. Portas de Acesso da VLAN 20 (Operações e Administração - Fa0/6 a Fa0/10)
+interface range fastEthernet 0/6 - 10
+ switchport mode access
+ switchport access vlan 20
+ spanning-tree portfast
+ description PORTAS_ACESSO_VLAN20_OPERACOES
+exit
+
+! 4. Portas de Acesso da VLAN 30 (Servidores e Data Center - Fa0/11 a Fa0/15)
+interface range fastEthernet 0/11 - 15
+ switchport mode access
+ switchport access vlan 30
+ spanning-tree portfast
+ description PORTAS_ACESSO_VLAN30_SERVIDORES
+exit
+
+! 5. Enlace Tronco (Trunk) para o Roteador R-FINBANK (Gig0/1)
+interface gigabitEthernet 0/1
+ switchport mode trunk
+ switchport trunk allowed vlan all
+ description LINK_TRUNK_ROUTER_802.1Q
+ no shutdown
+exit
+
+end
+write memory
+
+
+--------------------------------------------------------------------------------
+2. CONFIGURAÇÃO DO ROTEADOR CISCO 1941 (R-FINBANK)
+--------------------------------------------------------------------------------
+Acesse a aba CLI do Roteador (responda "no" se pedir autoconfiguração) e execute:
+
+enable
+configure terminal
+hostname R-FINBANK
+service dhcp
+
+! 1. Habilitação da Interface Física Principal (Sem IP)
+interface gigabitEthernet 0/0
+ no ip address
+ no shutdown
+ description LINK_TRUNK_PARA_SW-FINBANK
+exit
+
+! 2. Subinterface VLAN 10 - Gateway de Atendimento
+interface gigabitEthernet 0/0.10
+ encapsulation dot1Q 10
+ ip address 192.168.10.1 255.255.255.0
+ description GATEWAY_VLAN10_ATENDIMENTO
+exit
+
+! 3. Subinterface VLAN 20 - Gateway de Operações e Administração
+interface gigabitEthernet 0/0.20
+ encapsulation dot1Q 20
+ ip address 192.168.20.1 255.255.255.0
+ description GATEWAY_VLAN20_OPERACOES
+exit
+
+! 4. Subinterface VLAN 30 - Gateway de Servidores e Data Center
+interface gigabitEthernet 0/0.30
+ encapsulation dot1Q 30
+ ip address 192.168.30.1 255.255.255.0
+ description GATEWAY_VLAN30_SERVIDORES
+exit
+
+! 5. Reserva e Exclusão de Endereços Estáticos (Gateways e Servidores)
+ip dhcp excluded-address 192.168.10.1 192.168.10.10
+ip dhcp excluded-address 192.168.20.1 192.168.20.10
+
+! 6. Pool DHCP para VLAN 10 (Atendimento)
+ip dhcp pool POOL_ATENDIMENTO
+ network 192.168.10.0 255.255.255.0
+ default-router 192.168.10.1
+ dns-server 192.168.30.10
+exit
+
+! 7. Pool DHCP para VLAN 20 (Operações e Admin)
+ip dhcp pool POOL_OPERACOES
+ network 192.168.20.0 255.255.255.0
+ default-router 192.168.20.1
+ dns-server 192.168.30.10
+exit
+
+end
+write memory
+
+
+--------------------------------------------------------------------------------
+3. CONFIGURAÇÃO DOS SERVIDORES NO CISCO PACKET TRACER (VLAN 30)
+--------------------------------------------------------------------------------
+
+A. SRV-WEB-BANCO (Conectado na Fa0/11 do switch):
+   - IP Configuration:
+     * IP Address: 192.168.30.10
+     * Subnet Mask: 255.255.255.0
+     * Default Gateway: 192.168.30.1
+     * DNS Server: 192.168.30.10
+   - Serviços Ativos:
+     * HTTP: Status 'On' (index.html: <h1>FinBank Digital - Servidor Central Ativo</h1>)
+     * DNS: Status 'On' -> Registro A: finbank.local -> 192.168.30.10
+
+B. SRV-MONITOR (Conectado na Fa0/12 do switch):
+   - IP Configuration:
+     * IP Address: 192.168.30.20
+     * Subnet Mask: 255.255.255.0
+     * Default Gateway: 192.168.30.1
+     * DNS Server: 192.168.30.10
+   - Serviços Ativos:
+     * Syslog: Status 'On'
+
+--------------------------------------------------------------------------------
+4. CONFIGURAÇÃO DOS COMPUTADORES CLIENTES
+--------------------------------------------------------------------------------
+- PC-ATEND-01 (Fa0/1) e PC-ATEND-02 (Fa0/2): Marcar 'DHCP' (Receberão 192.168.10.x)
+- PC-OPER-01 (Fa0/6) e PC-ADMIN-01 (Fa0/7): Marcar 'DHCP' (Receberão 192.168.20.x)
+================================================================================

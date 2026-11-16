@@ -1,0 +1,497 @@
+%PDF-1.4
+%âãÏÓ
+1 0 obj
+<< /Length 6900 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? RELATÓRIO TÉCNICO DE INFRAESTRUTURA) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 414.28 818.89 Tm (GRUPO 01: CISCO PACKET TRACER) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Ambiente de Simulação: Cisco Packet Tracer v8.x | Roteamento 802.1Q | VLANs 10, 20, 30) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 1 de 4) Tj ET
+0.750 0.820 0.950 RG 1.00 w 0.950 0.970 1.000 rg 36.00 736.89 523.28 55.00 re B
+BT /F2 13 Tf 0.040 0.150 0.280 rg 1 0 0 1 48.00 773.89 Tm (PROJETO 02 ? INFRAESTRUTURA E MONITORAMENTO DE REDE) Tj ET
+BT /F1 9.5 Tf 0.250 0.350 0.500 rg 1 0 0 1 48.00 759.89 Tm (Documentação Executiva de Implementação, Configurações e Homologação) Tj ET
+BT /F2 8.5 Tf 0.050 0.550 0.350 rg 1 0 0 1 48.00 745.89 Tm (STATUS: HOMOLOGADO, TESTADO E 100% OPERACIONAL) Tj ET
+0.880 0.880 0.880 RG 0.80 w 0.980 0.980 0.980 rg 36.00 695.89 523.28 28.00 re B
+BT /F2 8 Tf 0.100 0.100 0.100 rg 1 0 0 1 46.00 711.89 Tm (Instituição: FinBank Digital) Tj ET
+BT /F2 8 Tf 0.100 0.100 0.100 rg 1 0 0 1 191.00 711.89 Tm (Equipe Responsável: GRUPO 01 \(Infraestrutura\)) Tj ET
+BT /F2 8 Tf 0.100 0.100 0.100 rg 1 0 0 1 416.00 711.89 Tm (Topologia: Router-on-a-Stick) Tj ET
+BT /F1 8 Tf 0.300 0.300 0.300 rg 1 0 0 1 46.00 700.89 Tm (Arquivo de Projeto: FinBank_Digital_Infraestrutura_Grupo01.pkt) Tj ET
+BT /F1 8 Tf 0.300 0.300 0.300 rg 1 0 0 1 416.00 700.89 Tm (Serviços: HTTP, DNS, DHCP, Syslog) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 678.89 Tm (1. CONTEXTO E PROBLEMA DE NEGÓCIO) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 675.89 m 559.28 675.89 l S
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 663.89 Tm (A FinBank Digital opera uma agência física composta por três setores críticos: Atendimento ao Cliente, Operações) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 652.89 Tm (Financeiras e Administração, e Serviços Internos \(Data Center Local\). A infraestrutura necessitava de uma segmentação) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 641.89 Tm (robusta por VLANs para isolar o tráfego sensível dos terminais financeiros e um sistema educacional de monitoramento) Tj ET
+BT /F1 8.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 36.00 630.89 Tm (capaz de detectar indisponibilidades e alertar sobre falhas persistentes em ativos críticos.) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 607.89 Tm (2. DIVISÃO DE RESPONSABILIDADES DAS EQUIPES) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 604.89 m 559.28 604.89 l S
+0.390 0.360 0.950 RG 1.20 w 0.960 0.970 1.000 rg 36.00 472.89 255.64 120.00 re B
+BT /F2 8.5 Tf 0.250 0.200 0.750 rg 1 0 0 1 44.00 578.89 Tm (GRUPO 01: INFRAESTRUTURA \(Nosso Grupo\)) Tj ET
+BT /F2 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 44.00 566.89 Tm (Ambiente: Cisco Packet Tracer v8.x) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 554.89 Tm (? Montagem física da topologia e cabeamento porta a porta.) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 543.89 Tm (? Criação e isolamento das VLANs 10, 20 e 30 no Switch 2960.) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 532.89 Tm (? Roteamento Router-on-a-Stick via tronco 802.1Q \(Gig0/0 a Gig0/1\).) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 521.89 Tm (? Configuração de Subinterfaces \(.10, .20, .30\) e Gateways.) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 510.89 Tm (? Configuração dos servidores DHCP no Roteador Cisco 1941.) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 499.89 Tm (? Implantação de HTTP \(Web\), DNS \(finbank.local\) e Syslog.) Tj ET
+BT /F1 7.5 Tf 0.150 0.150 0.150 rg 1 0 0 1 44.00 488.89 Tm (? Homologação completa de conectividade e testes de falha.) Tj ET
+0.700 0.750 0.850 RG 1.00 w 0.980 0.980 0.990 rg 303.64 472.89 255.64 120.00 re B
+BT /F2 8.5 Tf 0.200 0.250 0.350 rg 1 0 0 1 311.64 578.89 Tm (GRUPO 02: LÓGICA E SOFTWARE \(Outro Grupo\)) Tj ET
+BT /F2 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 311.64 566.89 Tm (Ambiente: Python 3 / Script de Monitoramento) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 554.89 Tm (? Implementação dos Requisitos Funcionais RF01 ao RF06.) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 543.89 Tm (? Cadastro dos ativos conforme tabela de IPs do Grupo 01.) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 532.89 Tm (? Execução periódica de verificações de disponibilidade \(Ping\).) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 521.89 Tm (? Regra de 3 falhas consecutivas: Alerta de indisponibilidade.) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 510.89 Tm (? Cálculo matemático de Uptime %: \(sucessos / total\) * 100.) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 499.89 Tm (? Priorização de alarmes de ativos Críticos e de Alta criticidade.) Tj ET
+BT /F1 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 488.89 Tm (? Emissão de relatórios consolidados em console e arquivo.) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 450.89 Tm (3. ARQUITETURA DE REDE E DIMENSIONAMENTO) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 447.89 m 559.28 447.89 l S
+BT /F2 8 Tf 0.100 0.250 0.450 rg 1 0 0 1 41.00 434.89 Tm (Roteador Core:) Tj ET
+BT /F1 8 Tf 0.200 0.200 0.200 rg 1 0 0 1 151.00 434.89 Tm (Cisco 1941 / Concentrador de Gateways e Servidor DHCP para as estações.) Tj ET
+BT /F2 8 Tf 0.100 0.250 0.450 rg 1 0 0 1 41.00 421.89 Tm (Switch Central:) Tj ET
+BT /F1 8 Tf 0.200 0.200 0.200 rg 1 0 0 1 151.00 421.89 Tm (Cisco Catalyst 2960-24TT / Gerenciamento de VLANs, Portfast e Tronco 802.1Q.) Tj ET
+BT /F2 8 Tf 0.100 0.250 0.450 rg 1 0 0 1 41.00 408.89 Tm (Servidor Aplicação:) Tj ET
+BT /F1 8 Tf 0.200 0.200 0.200 rg 1 0 0 1 151.00 408.89 Tm (Server-PT \(SRV-WEB-BANCO\) / Hospeda o portal Web institucional e o servidor DNS.) Tj ET
+BT /F2 8 Tf 0.100 0.250 0.450 rg 1 0 0 1 41.00 395.89 Tm (Servidor Eventos:) Tj ET
+BT /F1 8 Tf 0.200 0.200 0.200 rg 1 0 0 1 151.00 395.89 Tm (Server-PT \(SRV-MONITOR\) / Servidor interno de coleta de mensagens Syslog.) Tj ET
+BT /F2 8 Tf 0.100 0.250 0.450 rg 1 0 0 1 41.00 382.89 Tm (Estações Clientes:) Tj ET
+BT /F1 8 Tf 0.200 0.200 0.200 rg 1 0 0 1 151.00 382.89 Tm (4x PC-PT distribuídos nas VLANs de Atendimento e Operações Financeiras.) Tj ET
+0.200 0.700 0.400 RG 1.00 w 0.940 0.990 0.960 rg 36.00 329.89 523.28 32.00 re B
+BT /F2 8.5 Tf 0.050 0.500 0.250 rg 1 0 0 1 46.00 348.89 Tm (RESULTADO DA ENTREGA DO GRUPO 01:) Tj ET
+BT /F1 7.8 Tf 0.150 0.350 0.200 rg 1 0 0 1 46.00 337.89 Tm (Todas as estações de trabalho obtiveram IPs válidos via DHCP, o roteamento inter-VLAN operou com 0% de perda,) Tj ET
+BT /F1 7.8 Tf 0.150 0.350 0.200 rg 1 0 0 1 46.00 328.89 Tm (e a página http://finbank.local foi carregada com sucesso a partir dos navegadores dos clientes.) Tj ET
+endstream
+endobj
+2 0 obj
+<< /Length 12204 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? RELATÓRIO TÉCNICO DE INFRAESTRUTURA) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 414.28 818.89 Tm (GRUPO 01: CISCO PACKET TRACER) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Ambiente de Simulação: Cisco Packet Tracer v8.x | Roteamento 802.1Q | VLANs 10, 20, 30) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 2 de 4) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 796.89 Tm (4. ESQUEMA VISUAL DA TOPOLOGIA \(CISCO PACKET TRACER\)) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 793.89 m 559.28 793.89 l S
+0.800 0.850 0.900 RG 1.00 w 0.970 0.980 0.990 rg 36.00 602.89 523.28 180.00 re B
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 770.89 Tm (                                   +--------------------------+) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 763.49 Tm (                                   |        R-FINBANK         |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 756.09 Tm (                                   |   Roteador Cisco 1941    |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 748.69 Tm (                                   +------------+-------------+) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 741.29 Tm (                                                | Gig0/0) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 733.89 Tm (                                                | [Enlace Tronco 802.1Q]) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 726.49 Tm (                                                | Gig0/1) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 719.09 Tm (                                   +------------+-------------+) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 711.69 Tm (                                   |        SW-FINBANK        |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 704.29 Tm (                                   |    Switch Cisco 2960     |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 696.89 Tm (                                   +---+----------+---------+-+) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 689.49 Tm (                                       |          |         |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 682.09 Tm (            +--------------------------+          |         +--------------------------+) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 674.69 Tm (            | Fa0/1 e Fa0/2                       | Fa0/6 e Fa0/7                      | Fa0/11 e Fa0/12) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 667.29 Tm (    +-------v------------------+       +----------v---------------+         +----------v---------------+) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 659.89 Tm (    |    SETOR ATENDIMENTO     |       |    OPERACOES & ADMIN     |         |   SERVIDORES / DATA CTR  |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 652.49 Tm (    |        \(VLAN 10\)         |       |        \(VLAN 20\)         |         |        \(VLAN 30\)         |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 645.09 Tm (    | [PC-ATEND-01]            |       | [PC-OPER-01] \(Caixa\)     |         | [SRV-WEB-BANCO]          |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 637.69 Tm (    | IP: 192.168.10.11 \(DHCP\) |       | IP: 192.168.20.11 \(DHCP\) |         | IP: 192.168.30.10 \(Fix\)  |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 630.29 Tm (    | [PC-ATEND-02]            |       | [PC-ADMIN-01]            |         | [SRV-MONITOR]            |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 622.89 Tm (    | IP: 192.168.10.12 \(DHCP\) |       | IP: 192.168.20.12 \(DHCP\) |         | IP: 192.168.30.20 \(Fix\)  |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 615.49 Tm (    | Gateway: 192.168.10.1    |       | Gateway: 192.168.20.1    |         | Gateway: 192.168.30.1    |) Tj ET
+BT /F3 7.2 Tf 0.100 0.150 0.250 rg 1 0 0 1 48.00 608.09 Tm (    +--------------------------+       +--------------------------+         +--------------------------+) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 587.89 Tm (5. MAPEAMENTO DE PORTAS E CABEAMENTO FÍSICO \(CABO DIRETO\)) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 584.89 m 559.28 584.89 l S
+0.100 0.200 0.350 rg 36.00 559.89 523.28 14.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 42.00 563.89 Tm (Origem \(Equipamento / Porta\)) Tj ET
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 196.00 563.89 Tm (Destino \(Equipamento / Porta\)) Tj ET
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 351.00 563.89 Tm (Função e Modo da Porta) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.960 0.970 0.980 rg 36.00 547.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 550.89 Tm (R-FINBANK \(Gig0/0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 550.89 Tm (SW-FINBANK \(Gig0/1\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 550.89 Tm (Enlace Tronco 802.1Q \(Transporta VLANs 10, 20 e 30\)) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 535.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 538.89 Tm (SW-FINBANK \(Fa0/1\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 538.89 Tm (PC-ATEND-01 \(Fa0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 538.89 Tm (Porta de Acesso - VLAN 10 \(Atendimento ao Cliente\)) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.960 0.970 0.980 rg 36.00 523.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 526.89 Tm (SW-FINBANK \(Fa0/2\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 526.89 Tm (PC-ATEND-02 \(Fa0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 526.89 Tm (Porta de Acesso - VLAN 10 \(Atendimento ao Cliente\)) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 511.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 514.89 Tm (SW-FINBANK \(Fa0/6\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 514.89 Tm (PC-OPER-01 \(Fa0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 514.89 Tm (Porta de Acesso - VLAN 20 \(Operações Financeiras / Caixa\)) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.960 0.970 0.980 rg 36.00 499.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 502.89 Tm (SW-FINBANK \(Fa0/7\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 502.89 Tm (PC-ADMIN-01 \(Fa0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 502.89 Tm (Porta de Acesso - VLAN 20 \(Administração e Gerência\)) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 487.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 490.89 Tm (SW-FINBANK \(Fa0/11\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 490.89 Tm (SRV-WEB-BANCO \(Fa0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 490.89 Tm (Porta de Acesso - VLAN 30 \(Servidor Web HTTP e DNS\)) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.960 0.970 0.980 rg 36.00 475.89 523.28 12.00 re B
+BT /F2 7 Tf 0.100 0.200 0.300 rg 1 0 0 1 42.00 478.89 Tm (SW-FINBANK \(Fa0/12\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 478.89 Tm (SRV-MONITOR \(Fa0\)) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 351.00 478.89 Tm (Porta de Acesso - VLAN 30 \(Servidor de Monitoramento Syslog\)) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 457.89 Tm (6. TABELA OFICIAL DE ENDEREÇAMENTO IPV4 E MATRIZ DE CRITICIDADE) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 454.89 m 559.28 454.89 l S
+0.100 0.200 0.350 rg 36.00 429.89 523.28 14.00 re f
+BT /F2 7.2 Tf 1.000 1.000 1.000 rg 1 0 0 1 40.00 433.89 Tm (Dispositivo) Tj ET
+BT /F2 7.2 Tf 1.000 1.000 1.000 rg 1 0 0 1 121.00 433.89 Tm (Segmento / VLAN) Tj ET
+BT /F2 7.2 Tf 1.000 1.000 1.000 rg 1 0 0 1 211.00 433.89 Tm (Endereço IPv4) Tj ET
+BT /F2 7.2 Tf 1.000 1.000 1.000 rg 1 0 0 1 291.00 433.89 Tm (Gateway) Tj ET
+BT /F2 7.2 Tf 1.000 1.000 1.000 rg 1 0 0 1 371.00 433.89 Tm (Criticidade) Tj ET
+BT /F2 7.2 Tf 1.000 1.000 1.000 rg 1 0 0 1 441.00 433.89 Tm (Serviço / Aplicação) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 416.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 419.89 Tm (R-FINBANK) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 419.89 Tm (Gateway Central) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 419.89 Tm (192.168.10/20/30.1) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 419.89 Tm (?) Tj ET
+BT /F2 7 Tf 0.900 0.100 0.100 rg 1 0 0 1 371.00 419.89 Tm (CRÍTICA) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 419.89 Tm (Roteamento 802.1Q / DHCP) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 403.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 406.89 Tm (SRV-WEB-BANCO) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 406.89 Tm (VLAN 30 \(Servidores\)) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 406.89 Tm (192.168.30.10 \(Est.\)) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 406.89 Tm (192.168.30.1) Tj ET
+BT /F2 7 Tf 0.900 0.100 0.100 rg 1 0 0 1 371.00 406.89 Tm (CRÍTICA) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 406.89 Tm (HTTP \(80\) & DNS finbank.local) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 390.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 393.89 Tm (SRV-MONITOR) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 393.89 Tm (VLAN 30 \(Servidores\)) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 393.89 Tm (192.168.30.20 \(Est.\)) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 393.89 Tm (192.168.30.1) Tj ET
+BT /F2 7 Tf 0.100 0.600 0.300 rg 1 0 0 1 371.00 393.89 Tm (NORMAL) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 393.89 Tm (Syslog Server / Eventos) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 377.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 380.89 Tm (PC-OPER-01) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 380.89 Tm (VLAN 20 \(Operações\)) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 380.89 Tm (192.168.20.11 \(DHCP\)) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 380.89 Tm (192.168.20.1) Tj ET
+BT /F2 7 Tf 0.800 0.500 0.000 rg 1 0 0 1 371.00 380.89 Tm (ALTA) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 380.89 Tm (Terminal Financeiro de Caixa) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 364.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 367.89 Tm (PC-ADMIN-01) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 367.89 Tm (VLAN 20 \(Admin\)) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 367.89 Tm (192.168.20.12 \(DHCP\)) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 367.89 Tm (192.168.20.1) Tj ET
+BT /F2 7 Tf 0.100 0.600 0.300 rg 1 0 0 1 371.00 367.89 Tm (NORMAL) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 367.89 Tm (Gestão Operacional) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 351.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 354.89 Tm (PC-ATEND-01) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 354.89 Tm (VLAN 10 \(Atendimento\)) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 354.89 Tm (192.168.10.11 \(DHCP\)) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 354.89 Tm (192.168.10.1) Tj ET
+BT /F2 7 Tf 0.100 0.600 0.300 rg 1 0 0 1 371.00 354.89 Tm (NORMAL) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 354.89 Tm (Atendimento Presencial) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 338.89 523.28 13.00 re B
+BT /F2 7 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 341.89 Tm (PC-ATEND-02) Tj ET
+BT /F1 7 Tf 0.250 0.250 0.250 rg 1 0 0 1 121.00 341.89 Tm (VLAN 10 \(Atendimento\)) Tj ET
+BT /F2 7 Tf 0.050 0.250 0.550 rg 1 0 0 1 211.00 341.89 Tm (192.168.10.12 \(DHCP\)) Tj ET
+BT /F1 7 Tf 0.300 0.300 0.300 rg 1 0 0 1 291.00 341.89 Tm (192.168.10.1) Tj ET
+BT /F2 7 Tf 0.100 0.600 0.300 rg 1 0 0 1 371.00 341.89 Tm (NORMAL) Tj ET
+BT /F1 7 Tf 0.200 0.200 0.200 rg 1 0 0 1 441.00 341.89 Tm (Atendimento Presencial) Tj ET
+endstream
+endobj
+3 0 obj
+<< /Length 8321 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? RELATÓRIO TÉCNICO DE INFRAESTRUTURA) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 414.28 818.89 Tm (GRUPO 01: CISCO PACKET TRACER) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Ambiente de Simulação: Cisco Packet Tracer v8.x | Roteamento 802.1Q | VLANs 10, 20, 30) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 3 de 4) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 796.89 Tm (7. CONFIGURAÇÃO COMPLETA APLICADA NO SWITCH CATALYST 2960) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 793.89 m 559.28 793.89 l S
+0.200 0.250 0.350 RG 1.00 w 0.080 0.110 0.160 rg 36.00 488.09 523.28 296.80 re B
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 774.89 Tm (enable) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 767.29 Tm (configure terminal) Tj ET
+BT /F4 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 759.69 Tm (hostname SW-FINBANK) Tj ET
+BT /F3 6.8 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 752.09 Tm (! 1. Criacao das 3 VLANs segmentadas da instituicao) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 744.49 Tm (vlan 10) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 736.89 Tm ( name ATENDIMENTO) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 729.29 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 721.69 Tm (vlan 20) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 714.09 Tm ( name OPERACOES_ADMIN) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 706.49 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 698.89 Tm (vlan 30) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 691.29 Tm ( name SERVIDORES) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 683.69 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 676.09 Tm (! 2. Associacao das Portas de Acesso com Spanning-Tree PortFast) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 668.49 Tm (interface range fastEthernet 0/1 - 5) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 660.89 Tm ( switchport mode access) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 653.29 Tm ( switchport access vlan 10) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 645.69 Tm ( spanning-tree portfast) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 638.09 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 630.49 Tm (interface range fastEthernet 0/6 - 10) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 622.89 Tm ( switchport mode access) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 615.29 Tm ( switchport access vlan 20) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 607.69 Tm ( spanning-tree portfast) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 600.09 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 592.49 Tm (interface range fastEthernet 0/11 - 15) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 584.89 Tm ( switchport mode access) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 577.29 Tm ( switchport access vlan 30) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 569.69 Tm ( spanning-tree portfast) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 562.09 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 554.49 Tm (! 3. Configuracao do Enlace Tronco \(802.1Q\) ligado a GigabitEthernet 0/0 do Roteador) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 546.89 Tm (interface gigabitEthernet 0/1) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 539.29 Tm ( switchport mode trunk) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 531.69 Tm ( switchport trunk allowed vlan all) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 524.09 Tm ( no shutdown) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 516.49 Tm ( description LINK_TRUNK_ROUTER) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 508.89 Tm (exit) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 501.29 Tm (end) Tj ET
+BT /F3 6.8 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 493.69 Tm (write memory) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 472.09 Tm (8. CONFIGURAÇÃO COMPLETA APLICADA NO ROTEADOR CISCO 1941) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 469.09 m 559.28 469.09 l S
+0.200 0.250 0.350 RG 1.00 w 0.080 0.110 0.160 rg 36.00 152.09 523.28 308.00 re B
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 450.09 Tm (enable) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 442.59 Tm (configure terminal) Tj ET
+BT /F4 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 435.09 Tm (hostname R-FINBANK) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 427.59 Tm (service dhcp) Tj ET
+BT /F3 6.7 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 420.09 Tm (! 1. Habilitacao da Interface Fisica Principal \(sem IP\)) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 412.59 Tm (interface gigabitEthernet 0/0) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 405.09 Tm ( no shutdown) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 397.59 Tm (exit) Tj ET
+BT /F3 6.7 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 390.09 Tm (! 2. Subinterfaces dot1Q e Enderecamento dos Gateways de cada VLAN) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 382.59 Tm (interface gigabitEthernet 0/0.10) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 375.09 Tm ( encapsulation dot1Q 10) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 367.59 Tm ( ip address 192.168.10.1 255.255.255.0) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 360.09 Tm ( description GATEWAY_ATENDIMENTO) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 352.59 Tm (exit) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 345.09 Tm (interface gigabitEthernet 0/0.20) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 337.59 Tm ( encapsulation dot1Q 20) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 330.09 Tm ( ip address 192.168.20.1 255.255.255.0) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 322.59 Tm ( description GATEWAY_OPERACOES_ADMIN) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 315.09 Tm (exit) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 307.59 Tm (interface gigabitEthernet 0/0.30) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 300.09 Tm ( encapsulation dot1Q 30) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 292.59 Tm ( ip address 192.168.30.1 255.255.255.0) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 285.09 Tm ( description GATEWAY_SERVIDORES) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 277.59 Tm (exit) Tj ET
+BT /F3 6.7 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 270.09 Tm (! 3. Exclusao dos IPs de Gateways e Servidores do escopo DHCP) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 262.59 Tm (ip dhcp excluded-address 192.168.10.1 192.168.10.10) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 255.09 Tm (ip dhcp excluded-address 192.168.20.1 192.168.20.10) Tj ET
+BT /F3 6.7 Tf 0.400 0.750 0.500 rg 1 0 0 1 44.00 247.59 Tm (! 4. Pools de Distribuicao Dinamica de IP \(VLAN 10 e VLAN 20\)) Tj ET
+BT /F4 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 240.09 Tm (ip dhcp pool POOL_ATENDIMENTO) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 232.59 Tm ( network 192.168.10.0 255.255.255.0) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 225.09 Tm ( default-router 192.168.10.1) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 217.59 Tm ( dns-server 192.168.30.10) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 210.09 Tm (exit) Tj ET
+BT /F4 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 202.59 Tm (ip dhcp pool POOL_OPERACOES) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 195.09 Tm ( network 192.168.20.0 255.255.255.0) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 187.59 Tm ( default-router 192.168.20.1) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 180.09 Tm ( dns-server 192.168.30.10) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 172.59 Tm (exit) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 165.09 Tm (end) Tj ET
+BT /F3 6.7 Tf 0.900 0.950 1.000 rg 1 0 0 1 44.00 157.59 Tm (write memory) Tj ET
+endstream
+endobj
+4 0 obj
+<< /Length 8316 >>
+stream
+0.040 0.150 0.280 rg 36.00 813.89 523.28 18.00 re f
+BT /F2 7.5 Tf 1.000 1.000 1.000 rg 1 0 0 1 44.00 818.89 Tm (FINBANK DIGITAL  ?  PROJETO 02 ? RELATÓRIO TÉCNICO DE INFRAESTRUTURA) Tj ET
+BT /F2 7.5 Tf 0.350 0.850 0.700 rg 1 0 0 1 414.28 818.89 Tm (GRUPO 01: CISCO PACKET TRACER) Tj ET
+0.800 0.800 0.800 RG 0.80 w 36.00 26.00 m 559.28 26.00 l S
+BT /F1 7.5 Tf 0.400 0.400 0.400 rg 1 0 0 1 36.00 16.00 Tm (Ambiente de Simulação: Cisco Packet Tracer v8.x | Roteamento 802.1Q | VLANs 10, 20, 30) Tj ET
+BT /F2 7.5 Tf 0.200 0.200 0.200 rg 1 0 0 1 504.28 16.00 Tm (Página 4 de 4) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 796.89 Tm (9. CONFIGURAÇÃO DOS SERVIDORES E SERVIÇOS DE REDE) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 793.89 m 559.28 793.89 l S
+0.800 0.850 0.950 RG 1.00 w 0.980 0.980 1.000 rg 36.00 707.89 255.64 75.00 re B
+BT /F2 8 Tf 0.050 0.200 0.450 rg 1 0 0 1 44.00 770.89 Tm (SRV-WEB-BANCO \(192.168.30.10\)) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 758.89 Tm (? Servico HTTP / HTTPS: Marcado como ON.) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 747.89 Tm (? Pagina index.html: FinBank Digital - Servidor Central Ativo.) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 736.89 Tm (? Servico DNS: Marcado como ON.) Tj ET
+BT /F2 7.2 Tf 0.100 0.450 0.250 rg 1 0 0 1 44.00 725.89 Tm (? Registro Tipo A: finbank.local -> 192.168.30.10.) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 1 0 0 1 44.00 714.89 Tm (? Default Gateway: 192.168.30.1 | Subnet: 255.255.255.0) Tj ET
+0.800 0.850 0.950 RG 1.00 w 0.980 0.980 1.000 rg 303.64 707.89 255.64 75.00 re B
+BT /F2 8 Tf 0.050 0.200 0.450 rg 1 0 0 1 311.64 770.89 Tm (SRV-MONITOR \(192.168.30.20\)) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 758.89 Tm (? Endereco IP: 192.168.30.20 \(Estatico\).) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 747.89 Tm (? Default Gateway: 192.168.30.1 | DNS: 192.168.30.10.) Tj ET
+BT /F2 7.2 Tf 0.100 0.450 0.250 rg 1 0 0 1 311.64 736.89 Tm (? Servico Syslog: Marcado como ON.) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 311.64 725.89 Tm (? Funcao: Receptor de logs de conectividade e alertas.) Tj ET
+BT /F1 7.2 Tf 0.300 0.300 0.300 rg 1 0 0 1 311.64 714.89 Tm (? Ponto de integracao com a ferramenta do Grupo 02.) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 692.89 Tm (10. RELATÓRIO DE TROUBLESHOOTING E RESOLUÇÃO DE INCIDENTES) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 689.89 m 559.28 689.89 l S
+0.900 0.600 0.600 RG 0.80 w 0.990 0.960 0.960 rg 36.00 641.89 523.28 38.00 re B
+BT /F2 7.5 Tf 0.700 0.100 0.100 rg 1 0 0 1 44.00 668.89 Tm (Incidente 1: Seta Vermelha no Link R-FINBANK <-> SW-FINBANK) Tj ET
+BT /F1 7.2 Tf 0.250 0.250 0.250 rg 1 0 0 1 44.00 658.89 Tm (Causa: Interfaces de roteadores Cisco iniciam desativadas por padrao \(administratively down\).) Tj ET
+BT /F2 7.2 Tf 0.050 0.500 0.200 rg 1 0 0 1 44.00 648.89 Tm (Solucao: Execucao de 'no shutdown' na interface fisica GigabitEthernet0/0 e porta Gig0/1 do switch.) Tj ET
+0.900 0.600 0.600 RG 0.80 w 0.990 0.960 0.960 rg 36.00 598.89 523.28 38.00 re B
+BT /F2 7.5 Tf 0.700 0.100 0.100 rg 1 0 0 1 44.00 625.89 Tm (Incidente 2: Estacoes Clientes Obtendo IP 169.254.x.x \(APIPA\)) Tj ET
+BT /F1 7.2 Tf 0.250 0.250 0.250 rg 1 0 0 1 44.00 615.89 Tm (Causa: Conflito de sintaxe na CLI com comandos 'enable' encadeados, deixando as subinterfaces sem dot1Q.) Tj ET
+BT /F2 7.2 Tf 0.050 0.500 0.200 rg 1 0 0 1 44.00 605.89 Tm (Solucao: Aplicacao limpa das subinterfaces .10, .20 e dos pools DHCP POOL_ATENDIMENTO e POOL_OPERACOES.) Tj ET
+BT /F2 10 Tf 0.040 0.150 0.280 rg 1 0 0 1 36.00 588.89 Tm (11. BATERIA DE TESTES E HOMOLOGAÇÃO DE FUNCIONAMENTO) Tj ET
+0.040 0.150 0.280 RG 1.00 w 36.00 585.89 m 559.28 585.89 l S
+0.100 0.200 0.350 rg 36.00 561.89 523.28 13.00 re f
+BT /F2 7 Tf 1.000 1.000 1.000 rg 1 0 0 1 40.00 565.89 Tm (Teste) Tj ET
+BT /F2 7 Tf 1.000 1.000 1.000 rg 1 0 0 1 116.00 565.89 Tm (Origem) Tj ET
+BT /F2 7 Tf 1.000 1.000 1.000 rg 1 0 0 1 196.00 565.89 Tm (Destino) Tj ET
+BT /F2 7 Tf 1.000 1.000 1.000 rg 1 0 0 1 286.00 565.89 Tm (Protocolo) Tj ET
+BT /F2 7 Tf 1.000 1.000 1.000 rg 1 0 0 1 366.00 565.89 Tm (Resultado Obtido) Tj ET
+BT /F2 7 Tf 1.000 1.000 1.000 rg 1 0 0 1 496.00 565.89 Tm (Status) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 550.89 523.28 11.00 re B
+BT /F2 6.8 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 553.89 Tm (DHCP Lease) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 116.00 553.89 Tm (R-FINBANK) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 553.89 Tm (Todas as estacoes) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 286.00 553.89 Tm (UDP 67/68) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 366.00 553.89 Tm (IPs 192.168.10.x e 20.x recebidos com sucesso) Tj ET
+BT /F2 6.8 Tf 0.050 0.550 0.250 rg 1 0 0 1 496.00 553.89 Tm (APROVADO) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 539.89 523.28 11.00 re B
+BT /F2 6.8 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 542.89 Tm (Gateway Ping) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 116.00 542.89 Tm (PC-ATEND-01) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 542.89 Tm (192.168.10.1) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 286.00 542.89 Tm (ICMP Echo) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 366.00 542.89 Tm (0% de perda, tempo < 1ms) Tj ET
+BT /F2 6.8 Tf 0.050 0.550 0.250 rg 1 0 0 1 496.00 542.89 Tm (APROVADO) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 528.89 523.28 11.00 re B
+BT /F2 6.8 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 531.89 Tm (Inter-VLAN) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 116.00 531.89 Tm (PC-ATEND-01) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 531.89 Tm (192.168.30.10) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 286.00 531.89 Tm (802.1Q / ICMP) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 366.00 531.89 Tm (Comunicacao cruzando subinterfaces .10 e .30) Tj ET
+BT /F2 6.8 Tf 0.050 0.550 0.250 rg 1 0 0 1 496.00 531.89 Tm (APROVADO) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 517.89 523.28 11.00 re B
+BT /F2 6.8 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 520.89 Tm (Resolucao DNS) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 116.00 520.89 Tm (PC-OPER-01) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 520.89 Tm (finbank.local) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 286.00 520.89 Tm (UDP 53) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 366.00 520.89 Tm (Resolvido para o IP 192.168.30.10) Tj ET
+BT /F2 6.8 Tf 0.050 0.550 0.250 rg 1 0 0 1 496.00 520.89 Tm (APROVADO) Tj ET
+0.850 0.850 0.850 RG 0.50 w 0.970 0.980 0.990 rg 36.00 506.89 523.28 11.00 re B
+BT /F2 6.8 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 509.89 Tm (Web Banking) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 116.00 509.89 Tm (PC-OPER-01) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 509.89 Tm (http://finbank.local) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 286.00 509.89 Tm (TCP 80 \(HTTP\)) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 366.00 509.89 Tm (Portal FinBank carregado no Web Browser) Tj ET
+BT /F2 6.8 Tf 0.050 0.550 0.250 rg 1 0 0 1 496.00 509.89 Tm (APROVADO) Tj ET
+0.850 0.850 0.850 RG 0.50 w 1.000 1.000 1.000 rg 36.00 495.89 523.28 11.00 re B
+BT /F2 6.8 Tf 0.100 0.150 0.250 rg 1 0 0 1 40.00 498.89 Tm (Falha Controlada) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 116.00 498.89 Tm (SW-FINBANK) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 196.00 498.89 Tm (Porta Fa0/11) Tj ET
+BT /F1 6.8 Tf 0.200 0.200 0.200 rg 1 0 0 1 286.00 498.89 Tm (Link State) Tj ET
+BT /F1 6.8 Tf 0.150 0.150 0.150 rg 1 0 0 1 366.00 498.89 Tm (Shutdown simulando interrupcao para o monitor) Tj ET
+BT /F2 6.8 Tf 0.050 0.550 0.250 rg 1 0 0 1 496.00 498.89 Tm (APROVADO) Tj ET
+0.300 0.500 0.800 RG 1.00 w 0.950 0.970 1.000 rg 36.00 443.89 523.28 36.00 re B
+BT /F2 8.2 Tf 0.050 0.200 0.500 rg 1 0 0 1 44.00 467.89 Tm (12. TERMO DE ENTREGA \(HANDOVER\) PARA O GRUPO 02:) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 457.89 Tm (? A infraestrutura fisica e logica esta homologada e pronta no arquivo 'FinBank_Digital_Infraestrutura_Grupo01.pkt'.) Tj ET
+BT /F1 7.2 Tf 0.200 0.200 0.200 rg 1 0 0 1 44.00 447.89 Tm (? O Grupo 02 pode iniciar a execucao do software 'monitor_finbank.py' utilizando os IPs e niveis de criticidade da Secao 6.) Tj ET
+endstream
+endobj
+5 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica >>
+endobj
+6 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Helvetica-Bold >>
+endobj
+7 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier >>
+endobj
+8 0 obj
+<< /Type /Font /Subtype /Type1 /BaseFont /Courier-Bold >>
+endobj
+9 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 1 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+10 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 2 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+11 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 3 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+12 0 obj
+<<
+  /Type /Page
+  /Parent 2 0 R
+  /MediaBox [0 0 595.28 841.89]
+  /Contents 4 0 R
+  /Resources <<
+    /Font <<
+      /F1 5 0 R
+      /F2 6 0 R
+      /F3 7 0 R
+      /F4 8 0 R
+    >>
+  >>
+>>
+endobj
+13 0 obj
+<<
+  /Type /Pages
+  /Kids [9 0 R 10 0 R 11 0 R 12 0 R]
+  /Count 4
+>>
+endobj
+14 0 obj
+<<
+  /Type /Catalog
+  /Pages 13 0 R
+>>
+endobj
+xref
+0 15
+0000000000 65535 f 
+0000000015 00000 n 
+0000006967 00000 n 
+0000019224 00000 n 
+0000027597 00000 n 
+0000035965 00000 n 
+0000036035 00000 n 
+0000036110 00000 n 
+0000036178 00000 n 
+0000036251 00000 n 
+0000036457 00000 n 
+0000036664 00000 n 
+0000036871 00000 n 
+0000037078 00000 n 
+0000037163 00000 n 
+trailer
+<<
+  /Size 15
+  /Root 14 0 R
+>>
+startxref
+37218
+%%EOF
